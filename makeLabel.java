@@ -1,7 +1,7 @@
-package Food;
+package Cats;
 
 import javax.swing.*;
 
 public interface makeLabel {
-    JLabel makeLabel();
+     JLabel makeLabel();
 }
