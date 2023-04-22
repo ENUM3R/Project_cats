@@ -1,0 +1,31 @@
+Język programowania: Java  
+Zintegrowane środowisko programistyczne: Intelij
+System zautomatyzowanego budowania: Intelij 
+Repozytorium: GitHub
+Tematy projektów z programowania obiektowego.
+Temat 1:
+Symulacja świat zwierząt
+Przykłady dziedziczenia: 
+Z klasy Animal, dziedziczą klasy Lion, Mouse, Elephant i Eagle.
+Z klasy Food, dziedziczą mięso i owoce.
+Na mapie w czterech rogach umieszczamy 4 zwierzęta - lwa, mysz, słonia i orła, które posiadają dwa atrybuty siła(określa, czy zwierzę pokona przeciwnika) i szybkość(określa o ile pól będzie się poruszać zwierzę).
+ Na początku każdej rundy porusza się w losowo wylosowanym kierunku - n,s,w,e o liczbę pól określoną dla danego typu zwierzęcia. Na mapie w losowych miejscach znajdują się dwa typy pożywienia mięso i owoce.
+ Lew i orzeł jedzą mięso, mysz i słoń owoce. Gdy zwierzę się pożywi zwiększa się jeden z jego atrybutów losowo siła lub szybkość. 
+Gdy Lew się pożywi jego siła zwiększa się o 3 lub  szybkość o 2.
+Gdy Orzeł się pożywi jego siła rośnie o 2 lub szybkość o 3.
+Gdy Mysz się pożywi, jego siła rośnie o 1 lub szybkość o 4.
+Gdy Słoń się pożywi, jego siła rośnie o 4 lub szybkość o 1.
+Gra kończy się, gdy zostanie tylko jedno żywe zwierzę lub, gdy któreś zwierzę osiągnie szybkość lub siłę co najmniej 10. Każde zwierzę zaczyna z atrybutami 1,1.
+Temat 2:
+Symulacja świat kotów
+Przykład dziedziczenia:
+Z klasy Cat, dziedziczą klasy Lion, Tiger, Panther i Jaguar.
+Z klasy Food, dziedziczą mięso i ryby.
+Na mapie w czterech rogach umieszczamy cztery duże koty – lwa ,tygrysa, panterę 
+i jaguara, które posiadają dwa atrybuty siła (określa, prawdopodobieństwo, wygrania starcia przez kota) i szybkość(określa o ile pól będzie się poruszać zwierzę).
+Na początku każdej rundy porusza się w losowo wylosowanym kierunku - n,s,w,e o liczbę pól określoną dla danego typu zwierzęcia. Na mapie w losowych miejscach znajdują się dwa typy pożywienia mięso i ryby.
+Gdy kot pożywi się mięsem, otrzymuje +2 do siły i +1 do szybkości, a gdy rybą +1 do siły i +2 do szybkości. Lew i tygrys zaczynają z 2 siły i 1 szybkości, a pantera i jaguar z 1 siły i 2 szybkości.
+Gra kończy się, gdy zginie 3 z 4 kotów lub, gdy jakiś kot osiągnie co najmniej 10 siły i 8 szybkości, lub co najmniej 8 siły i 10 szybkości.
+Autorzy pomysłów: Cyprian Kozubek, Piotr Kulisz
+ 
+
