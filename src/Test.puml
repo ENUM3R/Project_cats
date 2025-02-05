@@ -1,0 +1,86 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Cat {
+    int speed;
+    int strength;
+    String name;
+}
+class Jaguar extends Cat{
+Jaguar();
+}
+
+BoardGame <--Jaguar
+class Lion extends Cat{
+Lion();
+}
+
+BoardGame <--LLion
+class Tiger extends Cat{
+Tiger();
+}
+BoardGame <--Tiger
+class Panther extends Cat{
+Panther();
+}
+BoardGame <--Panther
+class Food{
+    String name;
+}
+class Meat extends Food{
+Meat();
+}
+BoardGame <--Meat
+class Fish extends Food{
+Fish();
+}
+BoardGame <--Fish
+class Draw{
+ Random losuj;
+ String[] food;
+ int los_Row();
+ int los_Kol();
+ String los_Food();
+}
+BoardGame <-- Draw
+class Main{
+public static void main(String[] args);
+int row;
+int kol;
+BoardGame game = new BoardGame(row,kol);
+ game.setVisible(true);
+}
+class BoardGame extends JFrame{
+    int row;
+    int kol;
+    JPanel panel;
+    JLabel[][] labels;
+    JLabel[] opis;
+    String[] kierunki;
+    String[][] cats;
+    JPanel legenda;
+    Lion l1 = new Lion();
+    String lion;
+    Tiger t1 = new Tiger();
+    String tiger;
+    Panther p1 = new Panther();
+    String panther;
+    Jaguar j1=  new Jaguar();
+    String jaguar;
+    String grass;
+    Fish fish = new Fish();
+    String f1;
+    Meat meat = new Meat();
+    String m1;
+    Timer timer;
+    BoardGame(int row,int kol)
+    void startGame();
+    void update_Labels();
+    void move_Cats()
+    void moveCat(int row,int kol,int ile_ruchu,String kierunek);
+    int fight(String cat1, String cat2);
+    void  checkGameOver();
+    int checkState()
+}
+Main <--BoardGame
+@enduml
